@@ -106,6 +106,7 @@ def depthFirstSearch(problem):
                 if child not in open2 and child[0] not in closed:
                     open2.append(child[0])
                     open.append([child[0], path + [child[1]]])
+    return None #Failed to find path
     util.raiseNotDefined()
 
 def breadthFirstSearch(problem):
@@ -127,6 +128,7 @@ def breadthFirstSearch(problem):
                 if child[0] not in open2 and child[0] not in closed:
                     open2.append(child[0])
                     open.push([child[0], path + [child[1]]])
+    return None #Failed to find path
     util.raiseNotDefined()
         
 def uniformCostSearch(problem):
